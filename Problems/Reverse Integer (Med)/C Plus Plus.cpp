@@ -22,22 +22,5 @@ public:
             return 0;
         }
     }
-    int altReverse(int x)
-    {
-        int out = 0;
-        while(x!=0) 
-        {
-            try
-            {      
-                out = out * 10 + (x % 10);
-                x /= 10;
-            }
-            catch(...)
-            {
-                return 0;
-            }      
-        }
-        return out;
-    }
 };
 
